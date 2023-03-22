@@ -1,0 +1,55 @@
+    - Iniciar um repositório
+      (git init numa pasta vazia)
+
+    - Adicionar um repositório remoto num repositório local 
+      (git remote add origin com a url de um repositório remoto no GitHub [git-demo-local])
+
+    - Realizar um commit e push para demonstrar a criação do arquivo local no remoto
+      (criar arquivo simples, git commit e push e abrir o GitHub pra mostrar esse arquivo novo)
+    
+    - Clonar um repositório remoto 
+      (git clone por SSH num repositório no GitHub [git-demo])
+
+    - Criar um branch novo
+      (git checkout -b nome do branch)
+
+    - Remover alguns itens da lista e adicionar outros
+      (vim lista-do-mercado.txt para realizar as alterações)
+
+    - Realizar o diff dessas alterações com a versão anterior
+      (git diff HEAD)
+
+    - Comitar as modificações
+      (git commit das alterações)
+
+    - Realizar push, definindo novo upstream do remoto, e mostrando no remoto o novo branch
+      (git push -u origin nome da branch e depois abrir o GitHub com a modificação)
+
+    - Realizar a incorporação dessa nova lista na main, mergeando o conteúdo dessa nova branch
+      (git checkout main, git merge nome da branch e depois git push, mostrando no GitHub)
+
+    - Em paralelo, realize o git push na pasta paralela para subir um código paralelo
+      (entrar no repositório git-demo-remoto e realizar um git push -u origin lista-mais-interessante)
+
+    - Realizar git pull para puxar esse trabalho que foi realizado de forma paralela
+      (git pull)
+
+    - Entrar na outra branch para seguir um trabalho atualizando com a main
+      (git checkout lista-mais-interessante)
+
+    - Agora vamos tentar atualizar a lista com as outras atualizações que já estão na main
+      (git merge main)
+
+    - Com o erro, vamos resolver o conflito para colocar todas as coisas que queremos
+      (seguir o flow do git)
+
+    - Após isso, verificar os dados corrigidor após esse trabalho todo
+      (mostrar por git log e no GitHub)
+
+    - Por fim, vamos criar uma tag com essa versão nova
+      (git tag -v v2.0.0 -m "Lista turbinada" e depois git push --tags)
+
+    - Agora vamos ver as tags disponíveis no repositório
+      (git tag -l, git show v1.0.0, git show v2.0.0 e também abrindo no GitHub)
+
+    - E é isso :)
